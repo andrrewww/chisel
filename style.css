@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+p:empty {
+    display: none;
+}
+
+textarea {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+textarea:focus {
+    border-color: white;
+}
+
+#button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (hover: hover) {
+    button:hover {
+        background-color: rgb(100, 100, 100);
+    }
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}

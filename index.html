@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verse Cleaner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Verse Cleaner</h1>
+        <textarea id="input" rows="15" cols="50"></textarea>
+        <div id="button-container">
+            <button onclick="clean()">Clean</button>
+        </div>
+        <p id="verse_ref"></p>
+        <textarea id="output" rows="15" cols="50"></textarea>
+    </div>
+
+    <script>
+        function clean() {
+            let input = document.getElementById("input").value;
+            lines = input.split("\n");
+            document.getElementById("verse_ref").innerText = lines[0]
+            lines.splice(0, 1);
+            verse = lines.join("\n")
+            document.getElementById("output").value = verse.replace(/\[\d+\] /g, "");
+        }
+    </script>
+</body>
+</html>
