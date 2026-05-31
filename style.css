@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 16px;
 }
 
@@ -14,11 +14,12 @@ h1 {
     color: white;
 }
 
-p {
+#verse_ref {
     color: white;
+    font-size: 20px;
 }
 
-p:empty {
+#verse_ref:empty {
     display: none;
 }
 
@@ -29,6 +30,8 @@ textarea {
     width: 100%;
     box-sizing: border-box;
     resize: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 textarea:focus {

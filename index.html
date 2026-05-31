@@ -12,8 +12,11 @@
         <div id="button-container">
             <button onclick="clean()">Clean</button>
         </div>
-        <p id="verse_ref"></p>
+        <h2 id="verse_ref"></h2>
         <textarea id="output" rows="15" cols="50"></textarea>
+        <div id="button-container">
+            <button onclick="copy()">Copy</button>
+        </div>
     </div>
 
     <script>
@@ -24,6 +27,11 @@
             lines.splice(0, 1);
             verse = lines.join("\n")
             document.getElementById("output").value = verse.replace(/\[\d+\] /g, "");
+        }
+
+        function copy() {
+            let output = document.getElementById("output").value;
+            navigator.clipboard.writeText(output);
         }
     </script>
 </body>
