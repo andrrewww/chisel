@@ -1,8 +1,8 @@
 {
-  "name": "Verse Cleaner",
-  "short_name": "Verse Cleaner",
-  "start_url": "/verse-cleaner/",
-  "scope": "/verse-cleaner/",
+  "name": "Chisel",
+  "short_name": "Chisel",
+  "start_url": "/chisel/",
+  "scope": "/chisel/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",

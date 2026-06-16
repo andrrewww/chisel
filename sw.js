@@ -1,10 +1,10 @@
-const CACHE_NAME = 'verse-cleaner-v1.0';
+const CACHE_NAME = 'chisel-v1.0';
 
 const ASSETS_TO_CACHE = [
-  '/verse-cleaner/',
-  '/verse-cleaner/index.html',
-  '/verse-cleaner/style.css',
-  '/verse-cleaner/script.js',
+  '/chisel/',
+  '/chisel/index.html',
+  '/chisel/style.css',
+  '/chisel/script.js',
 ];
 
 // Install event — runs once when the service worker is first registered
