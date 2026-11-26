@@ -56,5 +56,5 @@ function showCopied(button) {
     // Change button to show "Copy" after 1.5s
     setTimeout(() => {
         button.innerText = "Copy";
-    }, 1000);
+    }, 1500);
 }
