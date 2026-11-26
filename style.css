@@ -5,7 +5,7 @@ body {
     padding-bottom: 24px;
 }
 
-#container {
+.container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -24,6 +24,10 @@ h1 {
     display: none;
 }
 
+#result[hidden] {
+    display: none;
+}
+
 textarea {
     background-color: rgb(64, 64, 64);
     color: white;
@@ -39,7 +43,7 @@ textarea:focus {
     border-color: white;
 }
 
-#button-container {
+.button-container {
     display: flex;
     justify-content: flex-end;
 }
